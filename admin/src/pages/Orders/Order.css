@@ -1,0 +1,46 @@
+.order-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr; 
+    align-items: start;
+    gap: 20px; 
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 14px;
+    color: #505050;
+  }
+  
+  .order-item img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+  }
+  .order-item-name{
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  .order-item-food {
+    margin-bottom: 5px; 
+  }
+  
+  .order-item-address,
+  .order-item-name,
+  .order-item-phone {
+    margin-bottom: 10px; 
+  }
+  
+  select {
+    padding: 10px;
+    background-color: #ffe8e4;
+    font-size: 14px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    width: max(10vw,120px);
+    outline: none;
+    cursor: pointer;
+  }
+.order-add {
+    margin-left: 20px;
+    padding-left: 20px; 
+  }
+  

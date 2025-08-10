@@ -1,0 +1,98 @@
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling */
+    animation: fadeIn 1s;
+    overflow: hidden; /* Ensure content doesn't overflow on hover */
+}
+
+.food-item:hover {
+    transform: scale(1.05); /* Uniform scaling of the entire card */
+    box-shadow: 0px 4px 15px #00000030;
+}
+
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    transition: transform 0.3s ease; /* Add smooth transition for image */
+}
+
+.food-item-info {
+    padding: 20px;
+    transition: transform 0.3s ease; /* Sync with the card's hover effect */
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.food-item-name-rating img {
+    width: 70px;
+}
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
+}
+
+.food-item-price {
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.food-item-img-container {
+    position: relative;
+}
+
+.food-item-img-container .add {
+    width: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.food-item-img-container .add:hover {
+    transform: scale(1.2);
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.food-item-counter:hover {
+    transform: scale(1.1);
+}
+
+.food-item-counter img {
+    width: 28px;
+    transition: transform 0.3s ease;
+}
+
+.food-item-counter img:hover {
+    transform: scale(1.2);
+}
